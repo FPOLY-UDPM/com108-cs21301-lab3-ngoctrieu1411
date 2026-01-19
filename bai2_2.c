@@ -1,7 +1,8 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+[Phạm Nguyễn Ngọc Triều]
+ * MSSV:      [PS49280]
+ * Lớp:       [COM108]
+
  *****************************************************************************/
 
 //  BÀI 2: XÂY DỰNG CHƯƠNG TRÌNH GIẢI PHƯƠNG TRÌNH  
@@ -20,15 +21,37 @@
 // o X2 = (-b – căn(delta))/(2*a)
 
 #include <stdio.h>
+#include <math.h>
 
 int main(){
+    float a, b, c, delta, X1, X2, X;
+    printf("Nhập giá trị a: ");
+    scanf("%f", &a);
+     printf("Nhập giá trị b: ");
+    scanf("%f", &b);
+     printf("Nhập giá trị c: ");
+    scanf("%f", &c);
+    if(a==0)
+    printf("Phương trình trở thành b*x + c = 0");
+    else if(a!=0)
+    {
+        delta = b*b - 4*a*c;
+        if(delta<0)
+        printf("Phương trình vô nghiệm");
+        else if(delta==0)
+        {
+            X = -b/(2*a);
+            printf("Phương trình có nghiệm kép x = %.2f", X);
+        }
+        else if(delta>0)
+        {
+            X1 = (-b + sqrt(delta))/(2*a);
+            X2 = (-b - sqrt(delta))/(2*a);
+            printf("Phương trình có 2 nghiệm phân biệt:\nX1 = %.2f\nX2 = %.2f", X1, X2);
+        }
     
-    // Khai báo biến
-
-
-    // Nhập dữ liệu
-
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
-
+    }
+    
 }
+
+ 
