@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: [Phạm Nguyễn Ngọc Triều]
+ * MSSV:      [PS49280]
+ * Lớp:       [COM108]
  *****************************************************************************/
 
 //  BÀI 2: XÂY DỰNG CHƯƠNG TRÌNH GIẢI PHƯƠNG TRÌNH  
@@ -19,12 +19,18 @@
 
 int main(){
     
-    // Khai báo biến
 
-
-    // Nhập dữ liệu
-
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
-
+    float a, b, X;
+    printf("Nhập giá trị a: ");
+    scanf("%f", &a);
+     printf("Nhập giá trị b: ");
+    scanf("%f", &b);
+    if(a==0 && b==0)
+    printf("Phương trình có vô số nghiệm");
+    else if(a==0 && b!=0)
+    printf("Phương trình vô nghiệm");
+    else 
+    X = -b/a;
+    printf("Phương trình có nghiệm x = %.2f\n", X);   
 }
+    
